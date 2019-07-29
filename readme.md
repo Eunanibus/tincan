@@ -18,9 +18,9 @@ All configurations, settings and code are open-source. You can see what we do, a
 
 #### How to run
 
-You can clone and run this service locally. To do so, ensure that you have an environment variable `KEY` exported locally. Make commands have been constructed for convenience.
+You can clone and run this service locally. To do so, ensure that you have an environment variable `KEY` exported locally. Make commands have been constructed for convenience. You'll need Docker installed!
 
-Ensure your key is exported with `export KEY=EXAMPLE_KEY` then run `make run`
+Ensure your key is exported with `export KEY=EXAMPLE_KEY` then run `make deploy`
 
 #### Our Commitment
 We want to make development a little easier. **We don't track. We don't store anything about you.**
