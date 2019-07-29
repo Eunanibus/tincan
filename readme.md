@@ -20,13 +20,7 @@ All configurations, settings and code are open-source. You can see what we do, a
 
 You can clone and run this service locally. To do so, ensure that you have an environment variable `KEY` exported locally. Make commands have been constructed for convenience.
 
-##### Run Locally
-
-Run `make run`
-
-##### Deploy to prod
-
-Ensure your key is exported with `export KEY=EXAMPLE_KEY` then run `make deploy`
+Ensure your key is exported with `export KEY=EXAMPLE_KEY` then run `make run`
 
 #### Our Commitment
 We want to make development a little easier. **We don't track. We don't store anything about you.**
