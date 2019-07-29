@@ -1,0 +1,18 @@
+{
+  "name": "tin-can",
+  "version": "1.0.0",
+  "repository": "http://github.com/Eunanibus",
+  "description": "Tin Can is a service designed to support developers in transmitting sensitive information to one another",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "redis": "^2.8.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Eunan Camilleri",
+  "license": "ISC"
+}

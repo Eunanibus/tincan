@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tin Can</title>
+    <link href="https://fonts.googleapis.com/css?family=B612+Mono&display=swap" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-title">Welcome to Tin Can</div>
+        <img id="header-image" alt="tin-can" src="resources/images/tincan.jpg">
+    </header>
+    <div class="content">
+        <div style="display: none" id="init-content">
+            <div id="inner-content" class="text-content">
+                <span class="inner-content-text">Tin Can lets you send sensitive snippets quickly, easily and securely, for free</span>
+                <div class="tin-can-input-container">
+                    <textarea id="tin-can-input"></textarea>
+                </div>
+                <div class="button-container">
+                    <button id="submit" class="tc-button" disabled>Send</button>
+                </div>
+            </div>
+            <div id="post-sub-content" class="post-submission-content">
+                <div id="submission-url-container">
+                    <input id="submission-url" value="https://github.com/zenorocha/clipboard.js.git" aria-label="Copied!">
+                    <span id="copy-btn-ctr">
+                        <div class="tooltip">
+                            <button class="btn" data-clipboard-target="#foo" onclick="copyURL()" onmouseout="onOut()">
+                                <img id="icon" src="resources/images/clip.svg" alt="Copy to Clipboard">
+                                <span class="tooltiptext" id="tooltip">Copy to clipboard</span>
+                            </button>
+                        </div>
+                    </span>
+                </div>
+                <div id="reset-button-container" class="button-container">
+                    <button id="reset-button" onclick="reset()" class="tc-button">Send Something Else</button>
+                </div>
+            </div>
+        </div>
+        <div style="display:none" class="text-content" id="error-content">
+            <span id="error-text">Looks like there was a problem. Give it another try.</span>
+        </div>
+        <div style="display:none" class="claim-success-content" id="claim-success-content">
+            <textarea id="retrieved-output"></textarea>
+        </div>
+    </div>
+</body>
+</html>

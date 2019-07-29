@@ -1,0 +1,210 @@
+body {
+    position: relative;
+    font-family: 'B612 Mono', monospace;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.header-title {
+    font-size: 30px;
+}
+
+#header-image {
+    max-width: 30%;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.inner-content-text, .error-text {
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.text-content {
+    width: 100%;
+    text-align: center;
+    opacity: 1;
+}
+
+.tin-can-input-container {
+    padding: 20px 0;
+}
+
+#tin-can-input, #retrieved-output {
+    width: 100%;
+    height: 160px;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.tc-button {
+    background-color: #4c70fc;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.tc-button:disabled {
+    background-color: #80B0FC;
+}
+
+#reset-button-container {
+    padding: 20px 0;
+}
+
+.post-submission-content {
+    display: none;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#submission-url-container {
+    position: relative;
+    margin: 15px 0 0;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 4px 4px 0 0;
+    border: 1px solid #ddd;
+    z-index: 2;
+    display: table;
+    width: 100%;
+}
+
+#submission-url-container #submission-url.input:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#submission-url {
+    position: relative;
+    width: 100%;
+    display: table-cell;
+    min-height: 34px;
+    padding: 7px 8px;
+    font-size: 13px;
+    color: #333;
+    vertical-align: middle;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.075);
+    box-sizing: border-box;
+    -webkit-appearance: textfield;
+    cursor: text;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0;
+    text-shadow: none;
+    text-align: start;
+    -webkit-writing-mode: horizontal-tb;
+}
+
+#copy-btn-ctr {
+    width: 1%;
+    vertical-align: middle;
+    display: table-cell;
+    box-sizing: border-box;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #333;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #eee;
+    background-image: linear-gradient(#fcfcfc,#eee);
+    border: 1px solid #d5d5d5;
+    user-select: none;
+    -webkit-appearance: none;
+    text-transform: none;
+    overflow: visible;
+    box-sizing: border-box;
+    align-items: flex-start;
+    text-align: center;
+    text-rendering: auto;
+    letter-spacing: normal;
+    text-indent: 0;
+    -webkit-writing-mode: horizontal-tb;
+    text-shadow: none;
+    margin: 0 0 0 -1px;
+    border-radius: 0 3px 3px 0;
+}
+
+.btn:focus {
+    border-color: #51A7E8;
+}
+
+#icon {
+    margin-top: -3px;
+    position: relative;
+    top: 3px;
+    border: 0;
+    box-sizing: border-box;
+    width: 13px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
